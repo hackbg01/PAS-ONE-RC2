@@ -1,0 +1,32 @@
+# Daily encrypted DB backup (Supabase Free has no automatic backups). Not yet run: needs the repo secrets below.
+# Secrets (Settings > Secrets and variables > Actions): SUPABASE_DB_URL (direct/session-pooler URI, read-capable), BACKUP_PASSPHRASE
+# Artifacts of a PRIVATE repo are visible only to collaborators; the files are also AES-256 encrypted.
+name: db-backup
+on:
+  schedule: [{ cron: '0 20 * * *' }]     # 03:00 WIB
+  workflow_dispatch: {}
+permissions: { contents: read }
+jobs:
+  backup:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install PostgreSQL 17 client (must be >= server major version)
+        run: |
+          sudo install -d /usr/share/postgresql-common/pgdg
+          sudo curl -fsSL -o /usr/share/postgresql-common/pgdg/apt.postgresql.org.asc https://www.postgresql.org/media/keys/ACCC4CF8.asc
+          echo "deb [signed-by=/usr/share/postgresql-common/pgdg/apt.postgresql.org.asc] https://apt.postgresql.org/pub/repos/apt $(lsb_release -cs)-pgdg main" | sudo tee /etc/apt/sources.list.d/pgdg.list
+          sudo apt-get update -qq && sudo apt-get install -y -qq postgresql-client-17
+      - name: Backup
+        env:
+          DATABASE_URL: ${{ secrets.SUPABASE_DB_URL }}
+          BACKUP_PASSPHRASE: ${{ secrets.BACKUP_PASSPHRASE }}
+          GIT_SHA: ${{ github.sha }}
+          BACKUP_DIR: ${{ runner.temp }}/backups
+        run: bash scripts/backup/backup.sh
+      - uses: actions/upload-artifact@v4
+        with:
+          name: pas-backup-${{ github.run_id }}
+          path: ${{ runner.temp }}/backups/*
+          retention-days: 30
+          if-no-files-found: error

@@ -1,0 +1,2 @@
+/* Default theme = original PAS-One look (navy + gold). Values live in css/design-tokens.css :root; nothing to override. */
+:root[data-theme="default"] {}

@@ -1,0 +1,13 @@
+/* Editorial: serif headings, warm paper, hairline rules, square corners */
+:root[data-theme="editorial"] {
+  --brand-accent: #f5c26b; --accent-on-surface: #a16207;
+  --font-family: Georgia, 'Iowan Old Style', 'Times New Roman', serif;
+  --font-heading: Georgia, 'Iowan Old Style', 'Times New Roman', serif;
+  --color-navy: #7c2d12; --color-navy-light: #9a3d1f; --color-gold: #a16207;
+  --color-gray-light: #f3efe6; --color-gray-medium: #d6cfc0; --color-gray-dark: #57534e;
+  --color-text: #1c1917; --page-bg: #fbf9f4; --surface: #fffdf8;
+  --border-radius-sm: 0; --border-radius-md: 0; --border-radius-lg: 0;
+  --shadow-sm: none; --shadow-md: none; --shadow-lg: 0 0 0 1px #d6cfc0;
+  --font-size-base: 17px; --focus-ring: rgba(124,45,18,.2);
+}
+:root[data-theme="editorial"] body { line-height: 1.7; }

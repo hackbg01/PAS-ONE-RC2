@@ -1,0 +1,12 @@
+/* Dark: low-glare, no pure black */
+:root[data-theme="dark"] {
+  --brand-accent: #fff4c2; --accent-on-surface: #e0b84a;
+  color-scheme: dark;
+  --color-navy: #2f6f9f; --color-navy-light: #3d84b8; --color-gold: #e0b84a;
+  --color-gray-light: #1a1e23; --color-gray-medium: #2e353d; --color-gray-dark: #9aa4af;
+  --color-text: #e4e7ea; --page-bg: #111417; --surface: #181c21; --on-accent: #ffffff;
+  --success-bg: #12301e; --success-fg: #8fe0ad; --danger-bg: #3a1618; --danger-fg: #f2a0a4; --warning-bg: #3a2e10; --warning-fg: #f0cf7a;
+  --danger-hover: #d0463a; --success-hover: #2fa664;
+  --shadow-sm: none; --shadow-md: 0 1px 3px rgba(0,0,0,.5); --shadow-lg: 0 4px 12px rgba(0,0,0,.6);
+  --focus-ring: rgba(61,132,184,.35); --overlay: rgba(0,0,0,.7); --nav-border: rgba(255,255,255,.12);
+}

@@ -1,0 +1,10 @@
+/* Light: neutral, high-contrast, flat */
+:root[data-theme="light"] {
+  --brand-accent: #fcd34d; --accent-on-surface: #b45309;
+  --color-navy: #1f2937; --color-navy-light: #374151; --color-gold: #b45309;
+  --color-gray-light: #f4f4f5; --color-gray-medium: #d4d4d8; --color-gray-dark: #52525b;
+  --color-text: #18181b; --page-bg: #ffffff; --surface: #ffffff;
+  --border-radius-sm: 2px; --border-radius-md: 4px; --border-radius-lg: 6px;
+  --shadow-sm: none; --shadow-md: 0 1px 2px rgba(0,0,0,.12); --shadow-lg: 0 2px 6px rgba(0,0,0,.14);
+  --focus-ring: rgba(31,41,55,.18);
+}
