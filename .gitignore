@@ -1,0 +1,59 @@
+# Environment Configuration
+.env
+.env.local
+.env.*.local
+
+# IDE & Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Logs
+*.log
+logs/
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Temporary Files
+*.tmp
+.tmp/
+
+# Backup
+*.bak
+*.backup
+
+# Secrets (never commit)
+secrets.json
+credentials.json
+service-account-key.json
+
+# Node (if added later)
+node_modules/
+package-lock.json
+yarn.lock
+
+# Build artifacts (if added later)
+dist/
+build/
+.next/
+
+# Testing
+.coverage/
+coverage/
+
+# IDE workspace
+*.code-workspace
+
+# Project-specific secrets
+apps-script-credentials.json
+
+# Cloudflare Worker local state / deps (R2 simulation blobs must never be committed)
+worker/.wrangler/
+worker/node_modules/
+node_modules/
+backups/
