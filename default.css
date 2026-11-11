@@ -1,2 +1,31 @@
-/* Default theme = original PAS-One look (navy + gold). Values live in css/design-tokens.css :root; nothing to override. */
-:root[data-theme="default"] {}
+/* Default theme = original PAS-One look, refined for Apple-inspired minimalism and soft illumination */
+:root[data-theme="default"] {
+  --brand-accent: #f5f5f7; 
+  --accent-on-surface: #1d1d1f;
+  color-scheme: dark;
+  --color-navy: #161618; 
+  --color-navy-light: #2c2c2e; 
+  --color-gold: #d1d1d6;
+  --color-gray-light: #161618; 
+  --color-gray-medium: #2c2c2e; 
+  --color-gray-dark: #86868b;
+  --color-text: #f5f5f7; 
+  --page-bg: #000000; 
+  --surface: #1c1c1e; 
+  --on-accent: #000000;
+  --success-bg: #1c2c22; 
+  --success-fg: #34c759; 
+  --danger-bg: #3a2222; 
+  --danger-fg: #ff453a; 
+  --warning-bg: #3a321c; 
+  --warning-fg: #ffd60a;
+  --danger-hover: #ff3b30; 
+  --success-hover: #30b050;
+  --shadow-sm: none; 
+  --shadow-md: 0 4px 20px rgba(0,0,0,.6); 
+  --shadow-lg: 0 10px 30px rgba(0,0,0,.8);
+  --focus-ring: rgba(255,255,255,.25); 
+  --overlay: rgba(0,0,0,.8); 
+  --nav-border: rgba(255,255,255,.1);
+}
+[cite: 2, 4]```

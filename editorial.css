@@ -1,13 +1,14 @@
-/* Editorial: serif headings, warm paper, hairline rules, square corners */
+/* Editorial: serif headings, warm paper, hairline rules, square corners, refined for Apple-inspired elegance */
 :root[data-theme="editorial"] {
-  --brand-accent: #f5c26b; --accent-on-surface: #a16207;
-  --font-family: Georgia, 'Iowan Old Style', 'Times New Roman', serif;
-  --font-heading: Georgia, 'Iowan Old Style', 'Times New Roman', serif;
-  --color-navy: #7c2d12; --color-navy-light: #9a3d1f; --color-gold: #a16207;
-  --color-gray-light: #f3efe6; --color-gray-medium: #d6cfc0; --color-gray-dark: #57534e;
-  --color-text: #1c1917; --page-bg: #fbf9f4; --surface: #fffdf8;
-  --border-radius-sm: 0; --border-radius-md: 0; --border-radius-lg: 0;
-  --shadow-sm: none; --shadow-md: none; --shadow-lg: 0 0 0 1px #d6cfc0;
-  --font-size-base: 17px; --focus-ring: rgba(124,45,18,.2);
+  --brand-accent: #1d1d1f; --accent-on-surface: #f5f5f7;
+  --font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-heading: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --color-navy: #161618; --color-navy-light: #2c2c2e; --color-gold: #86868b;
+  --color-gray-light: #f5f5f7; --color-gray-medium: #e5e5ea; --color-gray-dark: #86868b;
+  --color-text: #1d1d1f; --page-bg: #fbfbfd; --surface: #ffffff;
+  --border-radius-sm: 8px; --border-radius-md: 12px; --border-radius-lg: 20px;
+  --shadow-sm: none; --shadow-md: 0 4px 20px rgba(0,0,0,.04); --shadow-lg: 0 10px 30px rgba(0,0,0,.08);
+  --font-size-base: 16px; --focus-ring: rgba(0,0,0,.2);
 }
-:root[data-theme="editorial"] body { line-height: 1.7; }
+:root[data-theme="editorial"] body { line-height: 1.6; }
+[cite: 2, 5]```

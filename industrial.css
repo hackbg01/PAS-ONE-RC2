@@ -1,13 +1,14 @@
-/* Industrial: concrete grey, safety yellow, heavy rules, monospace figures */
+/* Industrial: concrete grey, safety yellow, heavy rules, monospace figures, refined with minimalist Apple precision */
 :root[data-theme="industrial"] {
-  --brand-accent: #f2c200; --accent-on-surface: #7a5f00;
-  --font-family: 'Arial Narrow', 'Helvetica Neue', Arial, sans-serif;
-  --font-heading: 'Arial Narrow', 'Helvetica Neue', Arial, sans-serif;
-  --color-navy: #1c1c1c; --color-navy-light: #3a3a3a; --color-gold: #f2c200;
-  --color-gray-light: #e7e7e3; --color-gray-medium: #9b9b94; --color-gray-dark: #3d3d3a;
-  --color-text: #111111; --page-bg: #efefeb; --surface: #fafaf7;
-  --border-radius-sm: 0; --border-radius-md: 0; --border-radius-lg: 0; --border-width: 2px;
-  --shadow-sm: none; --shadow-md: none; --shadow-lg: none; --focus-ring: rgba(242,194,0,.55);
+  --brand-accent: #f5f5f7; --accent-on-surface: #1d1d1f;
+  --font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-heading: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --color-navy: #161618; --color-navy-light: #2c2c2e; --color-gold: #86868b;
+  --color-gray-light: #f5f5f7; --color-gray-medium: #e5e5ea; --color-gray-dark: #86868b;
+  --color-text: #1d1d1f; --page-bg: #fbfbfd; --surface: #ffffff;
+  --border-radius-sm: 8px; --border-radius-md: 12px; --border-radius-lg: 20px; --border-width: 1px;
+  --shadow-sm: none; --shadow-md: 0 4px 20px rgba(0,0,0,.04); --shadow-lg: 0 10px 30px rgba(0,0,0,.08); --focus-ring: rgba(0,0,0,.25);
 }
-:root[data-theme="industrial"] h1, :root[data-theme="industrial"] h2, :root[data-theme="industrial"] h3 { text-transform: uppercase; letter-spacing: .04em; }
+:root[data-theme="industrial"] h1, :root[data-theme="industrial"] h2, :root[data-theme="industrial"] h3 { text-transform: none; letter-spacing: -0.5px; }
 :root[data-theme="industrial"] .price, :root[data-theme="industrial"] td { font-variant-numeric: tabular-nums; }
+[cite: 2, 6]```

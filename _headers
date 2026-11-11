@@ -1,0 +1,13 @@
+# Cloudflare Pages response headers. After creating the Worker and Supabase project, tighten connect-src/img-src to the exact hosts
+# (replace *.supabase.co with https://<project-ref>.supabase.co and *.workers.dev with your worker host).
+/*
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https://*.workers.dev; connect-src 'self' https://*.supabase.co https://*.workers.dev; font-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: geolocation=(self), camera=(), microphone=(), payment=()
+  Strict-Transport-Security: max-age=31536000; includeSubDomains
+  X-Frame-Options: DENY
+/vendor/*
+  Cache-Control: public, max-age=31536000, immutable
+/css/*
+  Cache-Control: public, max-age=3600
